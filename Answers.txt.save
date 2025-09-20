@@ -1,0 +1,18 @@
+Amir Thompson
+1. I think we don't have to use sudo before 'node lab.js' for this
+because it isn't accessing a port unlike some of our other examples
+
+2 & 3. What lab.js is doing is printing a line called before readFile. 
+It then is reading a file of plain text using the fs module and a 
+callback function and displays the file name, the author, what type of 
+file it is and the purpose of the file is. Before the readFile is 
+called back the second line 'after readFile' is printed before the 
+file is even done being read, showing that fs.readFile takes a long 
+time but doesnt hold up 'after readFile' since it is async.
+
+4. The function toString('utf8') is representing the ASCII code as a
+string.
+
+5. We don't need to use the toString because the browser can interpret the 
+binary format based on the content-type.
+
